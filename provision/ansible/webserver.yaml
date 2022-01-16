@@ -39,6 +39,11 @@
         name: vagrant
         group: docker
         
+    - name: Adiciona o usuario suporte no grupo docker
+      user:
+        name: suporte
+        group: docker
+
     - name: Cria a rede traefik
       shell: docker network create traefik
 
